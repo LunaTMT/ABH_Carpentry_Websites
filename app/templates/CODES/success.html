@@ -1,0 +1,40 @@
+<!-- templates/success.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="5;url={{ url_for('AHB.index') }}">
+    <title>Message Sent</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Success</h1>
+        <p>Your message has been sent.</p>
+        <p id="Redirect_p_tag">Redirecting to home page in 3 seconds...</p>
+    </div>
+
+    <!-- Optional: You can also include a link to manually redirect -->
+    <p>If you are not redirected, <a href="{{ url_for('AHB.index') }}">click here</a>.</p>
+
+    <script>
+        let count = 3;
+        const p = document.getElementById('Redirect_p_tag');    
+
+        function countdown(){
+            p.textContent = `Redirecting to home page in ${count} seconds...`;
+
+            if (count === 0) {
+                window.location.href = "{{ url_for('AHB.index') }}";
+            } else {
+                count--;
+                setTimeout(countdown, 1000);
+            }
+   
+        p.textContent
+        }
+        countdown();        
+    </script>
+    
+</body>
+</html>

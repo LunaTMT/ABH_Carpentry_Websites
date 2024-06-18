@@ -1,0 +1,24 @@
+<!-- templates/success.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="5;url={{ url_for('index') }}">
+    <title>404</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Uh Oh!</h1>
+        <p>We can't find that</p>
+        <p>Redirecting to home page...</p>
+    </div>
+
+    <!-- Optional: You can also include a link to manually redirect -->
+    <p>If you are not redirected, <a href="{{ url_for('index') }}">click here</a>.</p>
+
+    <script>
+        setTimeout(function() { window.location.href = "{{ url_for('index') }}"; }, 3000);  // 5000 milliseconds = 5 seconds
+    </script>
+</body>
+</html>
