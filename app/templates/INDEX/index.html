@@ -1,0 +1,20 @@
+{% extends "BASE/base.html" %}
+
+{% block title %}Home - AHB{% endblock %}
+
+{% block styles %} 
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/slideshow.css') }}">
+{% endblock %}
+
+{% block content %}
+    {% include 'INDEX/slideshow.html' %}
+    {% include 'INDEX/info.html' %}
+    <img src="{{ url_for('static', filename='images/Basildon/after_7.jpg') }}" alt="After renovation photo" style="width: 60%; height:auto;">
+
+    {% include 'INDEX/what_we_do.html' %}
+
+{% endblock %}
+
+{% block script %}
+    <script src="{{ url_for('static', filename='js/slideshow.js') }}"></script>
+{% endblock %}

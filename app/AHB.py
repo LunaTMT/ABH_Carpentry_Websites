@@ -11,7 +11,7 @@ bp = Blueprint('AHB', __name__)
 @bp.route('/')
 @bp.route('/home')
 def index():
-    return render_template('index.html')
+    return render_template('INDEX/index.html')
 
 @bp.route('/')
 @bp.route('/about')
