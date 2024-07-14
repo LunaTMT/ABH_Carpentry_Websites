@@ -4,14 +4,15 @@ It may be split into a package of its own (yourapp/views/) with related views gr
 """
 
 from flask import render_template, Blueprint, redirect, url_for, flash
-
+from .forms import ContactForm
 
 bp = Blueprint('AHB', __name__)
 
 @bp.route('/')
 @bp.route('/home')
 def index():
-    return render_template('INDEX/index.html')
+    form = ContactForm()
+    return render_template('INDEX/index.html', form=form)
 
 @bp.route('/')
 @bp.route('/about')
@@ -30,7 +31,7 @@ def portfolio():
 
 
 
-from .forms import ContactForm
+
 
 @bp.route('/contact', methods=['GET', 'POST'])
 def contact():

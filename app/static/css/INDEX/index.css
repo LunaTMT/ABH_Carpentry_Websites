@@ -1,0 +1,27 @@
+
+#index-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#slideshow-container {
+    background-color: yellow;
+}
+
+
+
+#logo1-container {
+    background-color: purple;
+}
+
+#what-we-do-container {
+    background-color: violet;
+}
+
+#logo2-container {
+    background-color: red;
+}
+
+#work-with-us-container {
+    background-color: yellowgreen;
+}

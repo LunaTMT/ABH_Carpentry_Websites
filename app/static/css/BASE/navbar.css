@@ -1,0 +1,23 @@
+.navbar-menu{
+    width: 100vw;
+    height: 10vh;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Align items vertically in the center */
+    justify-content: center; /* Center items horizontally */
+    gap: 20px; 
+}
+
+.navbar-item {
+    list-style: none; 
+}
+
+.navbar-item a {
+    text-decoration: none;
+    color: black; 
+}
+
+.navbar-logo {
+    margin: 0 20px;  /* space outside element = margin */
+}

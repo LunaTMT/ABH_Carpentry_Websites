@@ -3,6 +3,9 @@
 <head>
     <title>{% block title %}AHB{% endblock %}</title>
     <!-- Include default stylesheets or meta tags here -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/BASE/base.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/BASE/navbar.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/BASE/footer.css') }}">
     {% block styles %}{% endblock %}
 </head>
 <body>

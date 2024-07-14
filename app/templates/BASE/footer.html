@@ -1,4 +1,16 @@
-<!-- yourapp/templates/footer.html -->
 <footer>
-    <p>&copy; 2024 My Website</p>
+    <div id="footer-container">
+        <div class="footer-text-container">
+            <p>Follow us:</p>
+            <img src="{{ url_for('static', filename='images/icons/facebook_black.png') }}" alt="Facebook icon" style="width: 10%; height:auto;">
+            <img src="{{ url_for('static', filename='images/icons/instagram_black.png') }}" alt="Instagram icon" style="width: 10%; height:auto;">
+        </div>
+
+        <img src="{{ url_for('static', filename='images/facebook_logo.jpg') }}" alt="Facebook logo" style="width: 20%; height:auto;">
+        
+        <div class="footer-text-container">
+            <p>&copy; 2024 My Website</p>
+            <p>Development & Website by Taylor Threader</p>
+        </div>
+    </div>
 </footer>
