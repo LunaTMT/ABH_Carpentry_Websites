@@ -1,3 +1,37 @@
-#footer-container{
-    background-color: brown;
+
+footer {
+    width: 100%;
+    background-color: black; /* Optional background color */
+    color: grey;
+}
+
+#footer-container {
+    display: flex;
+    justify-content: center; /* Centers items in the footer */
+    align-items: center; /* Vertically aligns items */
+    max-width: 1100px; /* Optional max width */
+    margin: 0 auto; /* Centers the footer container */
+}
+
+#footer-container > div {
+    flex: 1; /* Each child div takes equal space */
+    text-align: center; /* Center text within each item */
+}
+
+#footer-logo-container {
+    flex:  2;
+    margin: 0 20px; /* Optional spacing around the logo */
+}
+
+
+#footer-social-media-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#footer-social-media-container img {
+    width: 50px;
+
 }

@@ -11,7 +11,7 @@
 #logo1-container img {
     position: absolute;
     width: 100%;
-    height: auto;
+    height: 100%;
     top: 0; /* initial top position */
     left: 0; /* initial left position */
     transform: translate(-50, -150px); /* Adjust this to move the image */
