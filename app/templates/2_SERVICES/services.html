@@ -3,10 +3,12 @@
 
 {% block title %}Services - AHB {% endblock %}
 
-{% block content %}
-
-<h1>Services</h1>
-<p>This is the Services page content. </p>
+{% block styles %} 
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/BASE/image_banner.css') }}">
 {% endblock %}
 
+
+{% block content %}
+    {% include '2_SERVICES/1_image_banner.html' %}
+{% endblock %}
 

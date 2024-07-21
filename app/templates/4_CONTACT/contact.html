@@ -1,9 +1,18 @@
 <!-- yourapp/templates/index.html -->
 {% extends "BASE/base.html" %}
 
-{% block title %}Home - AHB{% endblock %}
+{% block title %}Contact - AHB{% endblock %}
+
+
+{% block styles %} 
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/BASE/image_banner.css') }}">
+{% endblock %}
+
 
 {% block content %}
+    {% include '4_CONTACT/1_image_banner.html' %}
+
+
 <div class="container">
     <h1>Contact Me</h1>
     {% with messages = get_flashed_messages(with_categories=true) %}
