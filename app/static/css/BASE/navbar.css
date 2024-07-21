@@ -1,23 +1,38 @@
-.navbar-menu{
+.navbar-menu {
     width: 100vw;
-    height: 10vh;
+    height: 13vh;
+    margin:auto;
     background-color: white;
     display: flex;
     flex-direction: row;
-    align-items: center; /* Align items vertically in the center */
-    justify-content: center; /* Center items horizontally */
-    gap: 20px; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 20px;
+   
 }
 
 .navbar-item {
-    list-style: none; 
+    list-style: none;
+
 }
 
 .navbar-item a {
     text-decoration: none;
-    color: black; 
+    color: black;
+    font-family: 'NEOTERIC_REGULAR';
+    font-size: 20px;
+    padding-bottom: 5px;
+    display: inline-block; /* Ensure text can be scaled without affecting layout */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transitions for scaling */
 }
 
-.navbar-logo {
-    margin: 0 20px;  /* space outside element = margin */
+
+
+/* Hover effects */
+.navbar-item a:hover {
+    transform: scale(1.1); /* Scale up text without affecting layout */
+}
+
+.navbar-item a:hover::after {
+    width: 100%; /* Expand the underline to the full width on hover */
 }

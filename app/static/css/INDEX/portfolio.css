@@ -1,8 +1,0 @@
-#portfolio-container {
-    width: 50%;
-    height: 15vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.2); /* 90% opacity */
-}

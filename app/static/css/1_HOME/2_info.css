@@ -1,0 +1,60 @@
+#info-container {
+    background-color: white;
+    height: 50vh;
+    display: flex;
+    direction: row;
+    align-items: center; /* Align items vertically in the center */
+    justify-content: center; 
+    margin: 0 25%;
+}
+
+#info-container p{
+    line-height: 25px;
+}
+
+#info-left-container{
+    width: 60%;
+}
+
+#info-left-container p{
+    color: grey;
+}
+
+
+
+
+#info-middle-container{
+    width: 10%;
+
+}
+
+
+
+
+#info-right-container{
+    width: 30%;
+}
+
+#info-right-container p{
+    margin-bottom: 5%;
+}
+
+
+
+#info-right-container button{
+    margin-top: 10%;
+    width: 50%;
+    padding: 5%;
+    font-size: 20px;
+    border: 2px solid black;
+    background-color: transparent; /* Initial background color */
+    color: black; /* Initial text color */
+    transition: background-color 0.5s ease, color 0.5s ease; /* Transition effect */
+}
+
+#info-right-container  button:hover {
+    background-color: black;
+    color: white;
+}
+
+

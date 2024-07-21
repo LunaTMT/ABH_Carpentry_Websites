@@ -1,29 +1,36 @@
 #work-with-us-container {
     position: relative;
     width: 100%;
-    height: 80vh;
+    height: 0vh;
     margin-top: 5%;
     display: flex;
+    overflow: hidden; /* Ensure overflow is hidden to prevent scrolling */
+    color: white;
 }
 
+#work-with-us-container h1 {
+    font-size: 75px;
+}
 
 #work-with-us-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
+    filter: brightness(70%);
+
 }
 
-
-
-#work-with-us-inner-container{
+#work-with-us-inner-container {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
     width: 40%;
 }
 
-#work-with-us-inner-top-container{
+#work-with-us-inner-top-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,25 +43,22 @@
     justify-content: center;
     align-items: center;
     height: 60%;
-
-
 }
 
 #form-name-container {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    gap: 20px; /* Space between first name and last name */
+    gap: 20px;
 }
 
 #form-name-container .form-group {
     flex: 1;
 }
 
-#form-name-container label{
+#form-name-container label {
     font-size: 90%;
 }
-
 
 .form-group {
     margin-bottom: 1%;
@@ -71,22 +75,42 @@
     width: 100%;
 }
 
-.form-control{
-   background-color: white;
-   height: 4vh;
-   font-size: 10%;
+.form-control {
+    background-color: white;
+    height: 4vh;
+    font-size: 10%;
 }
 
-#message{
+#message {
     height: 10vh;
 }
 
-#overlay-form .btn {
-    width: 100px;
-    height: 60px;
+#overlay-form .button {
+    width: 25%;
+    height: auto;
+    padding: 2%;
+    margin-top: 5%;
+
+
+    font-size: 30px;
+    border: 2px solid white;
+    background-color: rgba(255, 255, 255, 0.2); /* Initial background color */
+    color: white; /* Initial text color */
+    transition: background-color 0.5s ease, color 0.5s ease; /* Transition effect */
+    text-align: center;
 }
+
+
+#overlay-form .button:hover {
+    background-color: white;
+    color: black;
+}
+
+
 
 #overlay-form p {
     align-self: flex-start;
     margin-bottom: 2%;
 }
+
+

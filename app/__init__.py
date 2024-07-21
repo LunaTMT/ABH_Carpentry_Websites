@@ -18,8 +18,7 @@ def create_app(config_filename='config.py'):
         pass
 
     # Import and register blueprints
-    from . import auth, AHB
-    app.register_blueprint(auth.bp)
+    from . import AHB
     app.register_blueprint(AHB.bp)
 
     return app

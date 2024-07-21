@@ -1,6 +1,6 @@
 body {
-    overflow-x: hidden; 
 
+    overflow: auto;
 }
 
 
@@ -12,6 +12,10 @@ body {
   }
 
 
+h1, h2, h3{
+    font-family: 'NEOTERIC_REGULAR'
+}
+
 .on-top{
     z-index: 1;
 }
@@ -22,3 +26,5 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+

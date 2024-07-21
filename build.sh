@@ -6,7 +6,6 @@ CURRENT_DIR="$(pwd)"
 # Set environment variable to current directory
 export APP_CONFIG_FILE="$CURRENT_DIR/config/development.py"
 
-
 # Run Python script
 python3 run.py
 

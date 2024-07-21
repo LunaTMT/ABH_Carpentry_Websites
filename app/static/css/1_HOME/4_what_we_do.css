@@ -1,0 +1,76 @@
+#what-we-do-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%; 
+    height: 70vh;
+    margin: auto;
+    padding: 0 5%;
+    background-color: white;
+}
+
+#what-we-do-container-left-side,
+#what-we-do-container-right-side {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#what-we-do-container-left-side {
+    width: 40%;
+    padding-right: 5%;
+}
+
+#what-we-do-container-left-side img {
+    width: 100%;
+    height: 70%;
+    padding: 5%;
+}
+
+#what-we-do-container-right-side {
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#what-we-do-container-right-side ol {
+    list-style: none; /* Remove default bullets */
+   
+    padding-left: 0; /* Remove default padding */
+    font-family: 'NEOTERIC_BOLD';
+    font-size: 20px;
+}
+
+#what-we-do-container-right-side ol li {
+    position: relative; /* Needed for positioning the custom bullet */
+    margin-bottom: 8px; /* Adjust the value for the desired gap */
+}
+
+
+
+#what-we-do-container-right-side p {
+    color: grey;
+    line-height: 30px;
+}
+
+#what-we-do-container-right-side button {
+    margin-top: 3%;
+    width: 30%;
+    height: 8%;
+
+
+    font-size: 20px;
+    border: 2px solid black;
+    background-color: transparent; /* Initial background color */
+    color: black; /* Initial text color */
+    transition: background-color 0.5s ease, color 0.5s ease; /* Transition effect */
+}
+
+#what-we-do-container-right-side button:hover {
+    background-color: black;
+    color: white;
+}

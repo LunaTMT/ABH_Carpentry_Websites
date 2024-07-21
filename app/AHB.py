@@ -12,25 +12,19 @@ bp = Blueprint('AHB', __name__)
 @bp.route('/home')
 def index():
     form = ContactForm()
-    return render_template('INDEX/index.html', form=form)
+    return render_template('1_HOME/index.html', form=form)
 
-@bp.route('/')
-@bp.route('/about')
-def about():
-    return render_template('about.html')
 
 @bp.route('/')
 @bp.route('/services')
 def services():
-    return render_template('services.html')
+    return render_template('2_SERVICES/services.html')
+
 
 @bp.route('/')
 @bp.route('/portfolio')
 def portfolio():
-    return render_template('portfolio.html')
-
-
-
+    return render_template('3_PORTFOLIO/portfolio.html')
 
 
 @bp.route('/contact', methods=['GET', 'POST'])
@@ -47,7 +41,7 @@ def contact():
 
         return redirect(url_for('AHB.success'))
 
-    return render_template('contact.html', form=form)
+    return render_template('4_CONTACT/contact.html', form=form)
 
 
 
