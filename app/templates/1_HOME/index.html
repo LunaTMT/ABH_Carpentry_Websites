@@ -3,7 +3,6 @@
 {% block title %}Home - AHB{% endblock %}
 
 {% block styles %} 
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/1_HOME/index.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/1_HOME/1_slideshow.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/1_HOME/2_info.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/1_HOME/3_logo1.css') }}">
@@ -24,6 +23,8 @@
         {% include '1_HOME/7_instagram.html' %}
         {% include '1_HOME/8_work_with_us.html' %}
 {% endblock %}
+
+
 
 {% block script %}
     <script src="{{ url_for('static', filename='js/slideshow.js') }}"></script>

@@ -5,6 +5,7 @@ It may be split into a package of its own (yourapp/views/) with related views gr
 
 from flask import render_template, Blueprint, redirect, url_for, flash
 from .forms import ContactForm
+import json
 
 bp = Blueprint('AHB', __name__)
 
@@ -18,7 +19,11 @@ def index():
 @bp.route('/')
 @bp.route('/services')
 def services():
-    return render_template('2_SERVICES/services.html')
+    with open('json/services.json') as f:
+        data = json.load(f)
+    services = data.get('services', [])
+
+    return render_template('2_SERVICES/services.html', services=services)
 
 
 @bp.route('/')
