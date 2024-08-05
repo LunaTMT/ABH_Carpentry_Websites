@@ -5,11 +5,16 @@
 
 {% block styles %} 
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/BASE/image_banner.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/2_SERVICES/2_service_container.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/2_SERVICES/3_customer_reviews.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/2_SERVICES/4_instagram.css') }}">
 {% endblock %}
 
 
 {% block content %}
     {% include '2_SERVICES/1_image_banner.html' %}
-    {% include '2_SERVICES/2_services.html' %}
+    {% include '2_SERVICES/2_service_container.html' %}
+    {% include '2_SERVICES/3_customer_reviews.html' %}
+    {% include '2_SERVICES/4_instagram.html' %}
 {% endblock %}
 

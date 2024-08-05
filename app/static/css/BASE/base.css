@@ -28,8 +28,11 @@ h1, h2, h3{
 
 
 
+#grey-line{
+    width: 50%;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3); 
+}
 
-
-
-
-
+.italic {
+    font-style: italic;
+}

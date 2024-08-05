@@ -1,0 +1,30 @@
+#services-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    width: 60%;
+    height: 80vh;
+
+}
+
+#service-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 1%;
+    width: 20%;
+  
+}
+#service-text-container h3{
+    margin-top: 5%;
+}
+
+#service-text-container p{
+    margin-top: 2%;
+}
+
+

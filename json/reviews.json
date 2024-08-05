@@ -1,0 +1,16 @@
+{
+    "reviews": [
+        {
+            "review": "This company is simply the best carpentry company in the South Florida Area. Great Quality, Great timing, Fab Furniture. I am very happy I found them!",
+            "customer": "Lorna Jaquiss"
+        },
+        {
+            "review": "The craftsmanship is top-notch, and the team was professional and punctual. My new cabinets look fantastic. Highly recommend!",
+            "customer": "Michael Bennett"
+        },
+        {
+            "review": "I couldn’t be happier with the custom bookshelf they built for me. Exceptional quality and attention to detail. Worth every penny!",
+            "customer": "Sarah Thompson"
+        }
+    ]
+}

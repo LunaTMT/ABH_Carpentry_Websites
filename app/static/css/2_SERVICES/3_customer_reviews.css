@@ -1,0 +1,41 @@
+#reviews-container{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 50%;
+    height: 40vh;
+
+   
+}
+
+#customer-container{
+    margin: 1% 0;
+    text-align: center;
+    
+}
+
+#customer-container p{
+    color: rgb(83, 81, 81);
+}
+
+
+
+#reviews-container button{
+
+    width: 15%;
+    height: 15%;
+    font-size: 20px;
+    border: 2px solid black;
+    background-color: transparent; /* Initial background color */
+    color: black; /* Initial text color */
+    transition: background-color 0.5s ease, color 0.5s ease; /* Transition effect */
+}
+
+#reviews-container button:hover {
+    background-color: black;
+    color: white;
+}
+

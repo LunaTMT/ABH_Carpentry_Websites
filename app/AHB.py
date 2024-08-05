@@ -23,12 +23,17 @@ def services():
         data = json.load(f)
     services = data.get('services', [])
 
-    return render_template('2_SERVICES/services.html', services=services)
+    with open('json/reviews.json') as f:
+        data = json.load(f)
+    reviews = data.get('reviews', [])
+
+    return render_template('2_SERVICES/services.html', services=services, reviews=reviews)
 
 
 @bp.route('/')
 @bp.route('/portfolio')
 def portfolio():
+
     return render_template('3_PORTFOLIO/portfolio.html')
 
 
