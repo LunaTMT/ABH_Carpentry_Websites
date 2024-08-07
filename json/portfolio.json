@@ -1,0 +1,38 @@
+{
+    "metadeta": {
+        "comment" : "might be possible to add instead the type of service like herring bone or shevron, etc, and then have the residence"
+    },
+
+    "portfolio": [
+        {
+            "residence_name": "Sunset Villa",
+            "customer_name": "John Doe",
+            "photos": ["sunset_villas/image1.png", "sunset_villas/image2.png", "sunset_villas/image1.png", "sunset_villas/image1.png",
+                        "sunset_villas/image1.png", "sunset_villas/image2.png", "sunset_villas/image1.png", "sunset_villas/image1.png", 
+                        "sunset_villas/image1.png", "sunset_villas/image2.png", "sunset_villas/image1.png", "sunset_villas/image1.png", 
+                        "sunset_villas/image1.png", "sunset_villas/image2.png", "sunset_villas/image1.png", "sunset_villas/image1.png",  
+                        "sunset_villas/image2.png"]
+        },
+        {
+            "residence_name": "Ocean Breeze Apartment",
+            "customer_name": "Jane Smith",
+            "photos": ["ocean_breeze_apartments/image1.png", "ocean_breeze_apartments/image2.png", "ocean_breeze_apartments/image1.png", "ocean_breeze_apartments/image2.png", 
+                        "ocean_breeze_apartments/image1.png", "ocean_breeze_apartments/image2.png", "ocean_breeze_apartments/image1.png", "ocean_breeze_apartments/image2.png"]
+        },
+        {
+            "residence_name": "Mountain View Residence",
+            "customer_name": "Alice Johnson",
+            "photos": ["mountain_view_residences/image1.png", "mountain_view_residences/image2.png", "mountain_view_residences/image1.png", "mountain_view_residences/image1.png",
+                       "mountain_view_residences/image1.png", "mountain_view_residences/image2.png", "mountain_view_residences/image1.png", "mountain_view_residences/image1.png",  
+                       "mountain_view_residences/image1.png", "mountain_view_residences/image2.png", "mountain_view_residences/image1.png", "mountain_view_residences/image1.png", 
+                       "mountain_view_residences/image2.png", "mountain_view_residences/image1.png", "mountain_view_residences/image2.png", "mountain_view_residences/image1.png"]
+        },
+        {
+            "residence_name": "Riverside Estate",
+            "customer_name": "Bob Brown",
+            "photos": ["riverside_estates/image1.png", "riverside_estates/image2.png", "riverside_estates/image1.png", "mountain_view_residences/image1.png", 
+                        "riverside_estates/image2.png", "riverside_estates/image1.png", "riverside_estates/image2.png", "mountain_view_residences/image1.png"]
+        }
+    ]
+}
+

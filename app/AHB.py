@@ -27,14 +27,19 @@ def services():
         data = json.load(f)
     reviews = data.get('reviews', [])
 
-    return render_template('2_SERVICES/services.html', services=services, reviews=reviews)
+    form = ContactForm()
+
+    return render_template('2_SERVICES/services.html', services=services, reviews=reviews, form=form)
 
 
 @bp.route('/')
 @bp.route('/portfolio')
 def portfolio():
-
-    return render_template('3_PORTFOLIO/portfolio.html')
+    with open('json/portfolio.json') as f:
+        data = json.load(f)
+    portfolio = data['portfolio']
+    
+    return render_template('3_PORTFOLIO/portfolio.html', portfolio=portfolio)
 
 
 @bp.route('/contact', methods=['GET', 'POST'])

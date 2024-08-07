@@ -1,48 +1,90 @@
 #work-with-us-container {
-    position: relative;
-    width: 100%;
+
+    width: 50%;
     height: 80vh;
-    margin-top: 5%;
+
     display: flex;
-    overflow: hidden; /* Ensure overflow is hidden to prevent scrolling */
-    color: white;
+    justify-content: center;
+    align-items: center;
+
+    color: black;
+   
+    gap: 10px;
+
+    padding: 5% 0;
+    
 }
 
-#work-with-us-container h1 {
-    font-size: 75px;
+#work-with-us-container h3 {
+    font-size: 25px;
+    text-align: left;
 }
 
-#work-with-us-container img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+
+
+
+#left-inner-container {
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
     height: 100%;
-    filter: brightness(70%);
+    width: 60%;
 
+  
 }
 
-#work-with-us-inner-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+#left-inner-container h3{
+    margin-bottom: 5%;
+}
+
+#right-inner-container {
+    height: 100%;
     width: 40%;
+  
+    display: flex;
+    flex-direction:column;
+
+    align-items: flex-start;
+ 
 }
 
-#work-with-us-inner-top-container {
+
+#map {
+    width: 100%;
+    height: 80%;
+    border:0;
+}
+
+#contact-form{
+    width: 100%;
+}
+
+
+#text-container{
+
+    width: 100%;
+    height: 20%;
+
+ 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+
+    margin-top: 5%;
 }
+
+
 
 #overlay-form {
+    width: 100%;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 60%;
 }
 
 #form-name-container {
@@ -79,7 +121,7 @@
 .form-control {
     background-color: white;
     height: 4vh;
-    font-size: 10%;
+    font-size: 10px;
 }
 
 #message {
@@ -93,18 +135,18 @@
     margin-top: 5%;
 
 
-    font-size: 30px;
+    font-size: 20px;
     border: 2px solid white;
-    background-color: rgba(255, 255, 255, 0.2); /* Initial background color */
-    color: white; /* Initial text color */
+    border: 2px black solid;
+    color: black; /* Initial text color */
     transition: background-color 0.5s ease, color 0.5s ease; /* Transition effect */
     text-align: center;
 }
 
 
 #overlay-form .button:hover {
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
 }
 
 
@@ -112,7 +154,7 @@
 #overlay-form p {
     align-self: flex-start;
     margin-bottom: 2%;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 

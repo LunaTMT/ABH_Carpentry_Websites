@@ -20,9 +20,10 @@
 }
 
 
-#logo1-container p {
+#logo1-container h1 {
     font-size: 84px;
     z-index: 1;
     color: white;
-    
+    letter-spacing: 15px;
+    text-align: center;
 }

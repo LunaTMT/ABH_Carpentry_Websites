@@ -1,0 +1,41 @@
+#portfolio-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 0;
+}
+
+#project-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 1.5%;
+    padding-bottom: 2.5%;
+}
+
+#photo-container {
+    width: 50%;
+    height: auto;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
+    grid-template-rows: repeat(auto-fill, 150px); 
+
+    
+    padding: 5px;
+    row-gap: 5px;
+    box-sizing: border-box; 
+    min-height: max-content;
+    margin: 2% 0;
+}
+
+
+#photo-container img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}

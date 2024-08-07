@@ -34,3 +34,8 @@
     font-weight: 500;
     font-style: normal;
   }
+
+
+  .italic {
+    font-style: italic;
+}

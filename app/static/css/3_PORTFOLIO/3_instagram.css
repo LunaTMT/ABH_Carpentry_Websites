@@ -6,7 +6,7 @@
     width: 50%;
     height: 40vh;
 
-    border-bottom: 2px solid rgba(0, 0, 0, 0.3); /* 50% opacity */ 
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3); /* 50% opacity */
 }
 
 
@@ -35,6 +35,8 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(125px, 1fr)); 
     grid-template-rows: repeat(auto-fill, 125px); 
+
+    
 
     gap: 1rem;
     box-sizing: border-box; 

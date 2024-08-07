@@ -1,14 +1,9 @@
 <div id="work-with-us-container">
-    <img src="{{ url_for('static', filename='images/stock/workshop-background.jpg') }}" alt="Blended work photo">
-    
-    <div id="work-with-us-inner-container">
 
-        <div id=work-with-us-inner-top-container>
-            <h1>WORK WITH US</h1>
-            <br>
-            <p class="quicksand-text">Fill the form or send us an email to insert_email_address@gmail.com</p>
-            <br>
-        </div>
+    
+    <div id="left-inner-container">
+
+        <h3>WE WOULD LOVE TO WORK WITH YOU</h3>
 
         {% with messages = get_flashed_messages(with_categories=true) %}
             {% if messages %}
@@ -20,7 +15,7 @@
             {% endif %}
         {% endwith %}
 
-    
+
         <form method="POST" action="" id="overlay-form">
             {{ form.hidden_tag() }}
 
@@ -63,4 +58,20 @@
             <button class="button dosis-text">SUBMIT</button>
         </form>
     </div>
+
+
+
+    <div id="right-inner-container">
+        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19770.93356781253!2d0.6580779354702785!3d51.7263279820135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8de18ab1598d5%3A0x9a2e9db7f07dcd2a!2z0JzQvtC70LTQvtC9LCDQnNCw0LvQtNC-0L0!5e0!3m2!1sru!2suk!4v1722965967203!5m2!1sru!2suk"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+        
+        <div id="text-container">
+            <p class="quicksand-text italic">PHONE: +44 7534 005907</p>
+            <p class="quicksand-text italic">EMAIL: insertemail@gmail.com</p>
+        </div>
+    </div>
+
 </div>
+
+
+

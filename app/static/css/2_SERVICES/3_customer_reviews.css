@@ -29,9 +29,9 @@
     height: 15%;
     font-size: 20px;
     border: 2px solid black;
-    background-color: transparent; /* Initial background color */
-    color: black; /* Initial text color */
-    transition: background-color 0.5s ease, color 0.5s ease; /* Transition effect */
+    background-color: transparent; 
+    color: black; 
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 #reviews-container button:hover {

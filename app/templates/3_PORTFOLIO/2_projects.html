@@ -1,0 +1,17 @@
+<div id="portfolio-container">
+    
+    {% for project in portfolio %}
+        <div id="project-container">
+            <h2>{{ project.residence_name }}</h2>
+            
+            <div id="photo-container">
+                {% for photo in project.photos %}
+                    <img src="{{ url_for('static', filename='images/stock_projects/' ~ photo) }}" alt="{{ project.customer_name }}">
+                {% endfor %}
+            </div>
+
+            <div id="grey-line"></div>
+        </div>
+    {% endfor %}
+</div>
+

@@ -1,6 +1,6 @@
 .image-banner-container {
     width: 100%;
-    height: 40vh;
+    height: 30vh;
     position: relative; /* Ensures the text can be absolutely positioned within the container */
     overflow: hidden; /* Ensures any overflow content is hidden */
     display: flex;
