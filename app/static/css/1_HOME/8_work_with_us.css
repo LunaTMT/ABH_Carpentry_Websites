@@ -1,12 +1,15 @@
 #work-with-us-container {
     position: relative;
     width: 100%;
-    height: 80vh;
+    height: 85vh;
     margin-top: 5%;
     display: flex;
-    overflow: hidden; /* Ensure overflow is hidden to prevent scrolling */
+    
+    overflow: hidden; 
     color: white;
+    margin-top: -25px; /* this is because every instagram container has a margin-bottom of 100px */
 }
+
 
 #work-with-us-container h1 {
     font-size: 75px;
@@ -18,9 +21,12 @@
     left: 0;
     width: 100%;
     height: 100%;
-    filter: brightness(70%);
+    filter: brightness(40%);
 
 }
+
+
+
 
 #work-with-us-inner-container {
     position: absolute;
@@ -28,8 +34,17 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 40%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
+
+
+
+/* title */
 #work-with-us-inner-top-container {
     display: flex;
     flex-direction: column;
@@ -37,33 +52,24 @@
     align-items: center;
 }
 
+
+
+
+
 #overlay-form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     height: 60%;
-}
-
-#form-name-container {
-    display: flex;
     width: 100%;
-    justify-content: space-between;
-    gap: 20px;
 }
 
-#form-name-container .form-group {
-    flex: 1;
-}
 
-#form-name-container label {
-    font-size: 90%;
-}
-
-.form-group {
+#overlay-form p {
+    align-self: flex-start;
     margin-bottom: 1%;
-    width: 100%;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 #overlay-form label {
@@ -72,28 +78,62 @@
     margin-bottom: 1%;
 }
 
-#overlay-form .form-control {
+
+
+
+
+
+#form-name-container {
+    display: flex;
+    justify-content: space-between;
     width: 100%;
+    gap: 20px;
 }
 
-.form-control {
+
+#form-name-container label {
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: -7px 
+}
+
+
+
+
+
+
+/*Every single form box */
+.form-group {
+    margin-bottom: 3%;
+    width: 100%;
+    font-size: 30px;
+
+}
+
+/* input boxes */
+.form-control { 
     background-color: white;
     height: 4vh;
     font-size: 10%;
+    width: 100%;
 }
+
+
+
+
+
 
 #message {
     height: 10vh;
 }
 
-#overlay-form .button {
-    width: 25%;
+.button {
+    width: 20%;
     height: auto;
     padding: 2%;
     margin-top: 5%;
 
-
-    font-size: 30px;
+    font-size: 25px;
     border: 2px solid white;
     background-color: rgba(255, 255, 255, 0.2); /* Initial background color */
     color: white; /* Initial text color */
@@ -102,17 +142,9 @@
 }
 
 
-#overlay-form .button:hover {
+.button:hover {
     background-color: white;
     color: black;
-}
-
-
-
-#overlay-form p {
-    align-self: flex-start;
-    margin-bottom: 2%;
-    font-size: 20px;
 }
 
 

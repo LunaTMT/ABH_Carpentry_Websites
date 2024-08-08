@@ -6,7 +6,7 @@
         <div id=work-with-us-inner-top-container>
             <h1>WORK WITH US</h1>
             <br>
-            <p class="quicksand-text">Fill the form or send us an email to insert_email_address@gmail.com</p>
+            <p class="quicksand-text">Fill the form or send us an email to ahbcarpentry@gmail.com</p>
             <br>
         </div>
 
@@ -24,7 +24,8 @@
         <form method="POST" action="" id="overlay-form">
             {{ form.hidden_tag() }}
 
-            <p class="dosis-text">Name (required)</p>
+            <p class="dosis-text">Name <span style="font-size: 20px; filter: brightness(0.6);">(required)</span></p>
+
             <div id="form-name-container">
                 
                 <div class="form-group dosis-text">
@@ -44,23 +45,23 @@
                 </div>
             </div>
 
+            <p class="dosis-text">Email Address <span style="font-size: 20px; filter: brightness(0.6);">(required)</span></p>
             <div class="form-group dosis-text">
-                {{ form.email.label }}
                 {{ form.email(class="form-control") }}<br>
                 {% for error in form.email.errors %}
                     <span style="color: red;">{{ error }}</span><br>
                 {% endfor %}
             </div>
-
+            
+            <p class="dosis-text">Message <span style="font-size: 20px; filter: brightness(0.6);">(required)</span></p>
             <div class="form-group dosis-text">
-                {{ form.message.label }}
                 {{ form.message(class="form-control", rows=5) }}<br>
                 {% for error in form.message.errors %}
                     <span style="color: red;">{{ error }}</span><br>
                 {% endfor %}
             </div>
-
-            <button class="button dosis-text">SUBMIT</button>
         </form>
+
+        <button class="button dosis-header">SUBMIT</button>
     </div>
 </div>

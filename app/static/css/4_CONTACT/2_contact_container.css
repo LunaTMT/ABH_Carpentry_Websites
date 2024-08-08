@@ -1,7 +1,7 @@
 #work-with-us-container {
 
     width: 50%;
-    height: 80vh;
+    height: 75vh;
 
     display: flex;
     justify-content: center;
@@ -9,7 +9,7 @@
 
     color: black;
    
-    gap: 10px;
+    gap: 30px;
 
     padding: 5% 0;
     
@@ -74,6 +74,8 @@
     text-align: center;
 
     margin-top: 5%;
+    font-size: 25px;
+  
 }
 
 

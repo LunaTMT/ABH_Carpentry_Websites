@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5% 0;
+    padding-top: 5%;
 }
 
 #project-container {
@@ -13,9 +13,14 @@
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    margin-bottom: 1.5%;
+
     padding-bottom: 2.5%;
 }
+
+#project-container:last-child{
+    padding-bottom: 0;
+}
+
 
 #photo-container {
     width: 50%;

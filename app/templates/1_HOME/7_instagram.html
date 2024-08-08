@@ -1,20 +1,14 @@
-
-
 <div id="instagram-container">
-    <div id="instagram-top-container">
-        <p>AHB_CARPENTRY</p>
-        <img src="{{ url_for('static', filename='images/icons/instagram_black_inner.png') }}">
-    </div>
-   
+    <a href="https://www.instagram.com/ahb_carpentry/" target="_blank">
+        <div id="instagram-top-container">
+            <p>AHB_CARPENTRY</p>
+            <img src="{{ url_for('static', filename='images/icons/instagram_black_inner.png') }}" alt="Instagram Icon">
+        </div>
+    </a>
+    
     <div id="instagram-image-container">
-        <img src="{{ url_for('static', filename='images/Hornchuch/door.jpg') }}" alt="Blended work photo">
-        <img src="{{ url_for('static', filename='images/stock/image11.png') }}" alt="Blended work photo">
-        <img src="{{ url_for('static', filename='images/beauli_park/standing2.jpg') }}" alt="Blended work photo">
-        <img src="{{ url_for('static', filename='images/idk/floor.jpg') }}" alt="Blended work photo">
-        <img src="{{ url_for('static', filename='images/stock/image15.png') }}" alt="Blended work photo">
-        <img src="{{ url_for('static', filename='images/stock/image8.png') }}" alt="Blended work photo">
+        {% for item in instagram_posts %}
+            <img src="{{ url_for('static', filename='images/instagram/' ~ item.image_filename) }}" alt="{{ item.alt }}">
+        {% endfor %}
     </div>
 </div>
-
-
-

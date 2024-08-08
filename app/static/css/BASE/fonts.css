@@ -22,11 +22,23 @@
   
   .dosis-text {
     font-family: 'Dosis', sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
+ 
+    font-weight: 500;
     font-style: normal;
   }
   
+  .dosis-text {
+    font-family: 'Dosis', sans-serif; /* Ensure Dosis font is applied */
+    margin: 0; /* Remove default margin for consistency */
+}
+.dosis-text.required {
+    color: rgba(159, 153, 153, 0.82); /* Apply color */
+    font-size: 0.8em; /* Make the font size smaller */
+    margin-left: 5px; /* Add a bit of space between texts */
+}
+
+
+
 
   .quicksand-text {
     font-family: "Quicksand", sans-serif;

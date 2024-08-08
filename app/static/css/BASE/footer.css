@@ -3,14 +3,16 @@ footer {
     width: 100%;
     background-color: black; /* Optional background color */
     color: grey;
+ 
 }
 
 #footer-container {
     display: flex;
     justify-content: center; /* Centers items in the footer */
     align-items: center; /* Vertically aligns items */
-    max-width: 1200px; /* Optional max width */
+
     margin: 0 auto; /* Centers the footer container */
+    height: 15vh;
 }
 
 #footer-container > div {
@@ -24,6 +26,9 @@ footer {
 }
 
 
+
+
+
 #footer-social-media-container {
     display: flex;
     justify-content: center;
@@ -33,5 +38,4 @@ footer {
 
 #footer-social-media-container img {
     width: 50px;
-
 }

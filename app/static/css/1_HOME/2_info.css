@@ -41,7 +41,7 @@
 
 
 
-#info-right-container button{
+#info-right-container a{
     margin-top: 10%;
     width: 50%;
     padding: 5%;
@@ -50,9 +50,15 @@
     background-color: transparent; /* Initial background color */
     color: black; /* Initial text color */
     transition: background-color 0.5s ease, color 0.5s ease; /* Transition effect */
+    text-decoration: none;
+
+    
+    display: flex;          
+    justify-content: center; 
+    align-items: center;     
 }
 
-#info-right-container  button:hover {
+#info-right-container  a:hover {
     background-color: black;
     color: white;
 }

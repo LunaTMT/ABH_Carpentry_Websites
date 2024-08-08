@@ -1,7 +1,7 @@
 /* Slideshow container */
 .slideshow-container {
   width: 100vw; 
-  height: 90vh; /* Adjusted to cover full viewport height */
+  height: 88vh; /* Adjusted to cover full viewport height */
   position: relative;
   overflow-x: hidden; /* Hide horizontal overflow */
   overflow-y: hidden  ; /* Display vertical scrollbar if content exceeds viewport */
@@ -16,7 +16,7 @@
 /* Full-width images with number and caption text */
 .mySlides img {
   width: auto; 
-  height: 90vh; /* Ensures images cover the full height of the viewport */
+  height: 88vh; /* Ensures images cover the full height of the viewport */
   object-fit: cover; /* Ensures images maintain aspect ratio and cover the container */
 }
 
@@ -35,7 +35,10 @@
   border-radius: 0 3px 3px 0;
   user-select: none;
   z-index: 2; /* Ensure buttons are above the dots */
+  font-size: 45px;
 }
+
+
 
 /* Position the "next button" to the right */
 .next {
@@ -43,16 +46,14 @@
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
+
+
 
 /* Dot container */
 .dot-container {
   overflow-x: hidden;
   position: absolute;
-  bottom: 20px; /* Adjust this value to move dots up or down */
+  bottom: 20px; 
   left: 0;
   right: 0;
   margin: auto;

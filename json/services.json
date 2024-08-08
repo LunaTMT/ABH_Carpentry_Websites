@@ -3,42 +3,37 @@
         {
             "name": "Skirting",
             "description": "Installation of skirting boards to enhance the look of your rooms.",
-            "image": "image5.jpg"
+            "image": "skirting2.png"
         },
         {
             "name": "Architrave",
             "description": "Fitting architraves around doors and windows for a neat finish.",
-            "image": "image5.jpg"
+            "image": "architrave2.png"
         },
         {
             "name": "Door linings",
             "description": "Providing and installing door linings for a proper door fitting.",
-            "image": "image5.jpg"
+            "image": "door_linings2.png"
         },
         {
             "name": "Door Fitting/adjusting",
             "description": "Expert fitting and adjusting of doors for smooth operation.",
-            "image": "image5.jpg"
+            "image": "door_fitting2.png"
         },
         {
             "name": "Panelling",
             "description": "Decorative wall panelling to add character to your interiors.",
-            "image": "image5.jpg"
+            "image": "panelling.png"
         },
         {
             "name": "Laminate Flooring",
             "description": "Installing durable and stylish laminate flooring.",
-            "image": "image5.jpg"
+            "image": "laminate_flooring2.png"
         },
         {
             "name": "Wooden flooring",
             "description": "High-quality wooden flooring installation for a classic look.",
-            "image": "image5.jpg"
-        },
-        {
-            "name": "Hello bebos",
-            "description": "Best Osu player > cookiBest Osu player ",
-            "image": "image5.jpg"
+            "image": "wooden_flooring4.png"
         }
     ]
 }

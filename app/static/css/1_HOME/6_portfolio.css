@@ -8,17 +8,22 @@
 }
 
 
-#portfolio-container button {
-    width: 50%;
+#portfolio-container a {
+    width: 20%;
     height: 25%;
     font-size: 20px;
     border: 2px solid black;
     background-color: transparent; /* Initial background color */
     color: black; /* Initial text color */
     transition: background-color 0.5s ease, color 0.5s ease; /* Transition effect */
+    
+    text-decoration: none;
+    display: flex;          
+    justify-content: center; 
+    align-items: center;    
 }
 
-#portfolio-container button:hover {
+#portfolio-container a:hover {
     background-color: black;
     color: white;
 }

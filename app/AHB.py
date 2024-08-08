@@ -12,8 +12,17 @@ bp = Blueprint('AHB', __name__)
 @bp.route('/')
 @bp.route('/home')
 def index():
+    with open('json/slideshow.json') as f:
+        data = json.load(f)
+    slides = data.get('slides', [])
+
+    with open('json/instagram.json') as f:
+        data = json.load(f)
+    instagram_posts = data.get('instagram', [])
+
     form = ContactForm()
-    return render_template('1_HOME/index.html', form=form)
+
+    return render_template('1_HOME/index.html', slides=slides, instagram_posts=instagram_posts, form=form)
 
 
 @bp.route('/')
@@ -27,9 +36,13 @@ def services():
         data = json.load(f)
     reviews = data.get('reviews', [])
 
+    with open('json/instagram.json') as f:
+        data = json.load(f)
+    instagram_posts = data.get('instagram', [])
+
     form = ContactForm()
 
-    return render_template('2_SERVICES/services.html', services=services, reviews=reviews, form=form)
+    return render_template('2_SERVICES/services.html', services=services, reviews=reviews, instagram_posts=instagram_posts, form=form)
 
 
 @bp.route('/')
@@ -38,8 +51,12 @@ def portfolio():
     with open('json/portfolio.json') as f:
         data = json.load(f)
     portfolio = data['portfolio']
+
+    with open('json/instagram.json') as f:
+        data = json.load(f)
+    instagram_posts = data.get('instagram', [])
     
-    return render_template('3_PORTFOLIO/portfolio.html', portfolio=portfolio)
+    return render_template('3_PORTFOLIO/portfolio.html', portfolio=portfolio, instagram_posts=instagram_posts)
 
 
 @bp.route('/contact', methods=['GET', 'POST'])
